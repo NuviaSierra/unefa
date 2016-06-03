@@ -1,0 +1,150 @@
+//****************************************************************************
+  function menu_con_usu_ope(){
+  $this->resultado="
+  <table border=\"0\" align=\"center\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\"  height=\"100%\">
+	<tr>
+	  <td width=\"100%\"><div id=\"Listar\" style=\"position:absolute; width:100%; height:20px; z-index:auto; azimuth:center; top:35px; background-position:center; left: 0px;\">
+	    <table style=\"width: 100%; text-align: center; margin-left: auto; margin-right: auto;\" height=\"100%\" border=\"1\" align=\"left\" cellpadding=\"6\" cellspacing=\"2\" bordercolor=\"#777A4B\" bgcolor=\"#ffffff\">
+		  <tr><td colspan=\"10\" bgcolor=\"#777A4B\"><span class=\"Estilo16\">:: OPERACION</span></td></tr>
+		  <tr>
+		    <td bgcolor=\"#FFF8E5\" width=\"100%\"><span class=\"Estilo17\">
+			  <p>Esta opci&oacute;n permite asignar y modificar las operaciones y las Tablas a las que el usuario le sea permitido en todo el sistema. Los datos que presenta la ventana son:</p>
+			  <p><ul>
+			    <li><b>a.NACIONALIDAD Y CEDULA DE IDENTIDAD</b></li>               
+			    <li><b>b.APELLIDOS Y NOMBRES</b></li>
+                <li><b>c.PERFIL</b></li>
+                <li><b>d.UNA TABLA CON LAS OPERACIONES Y TABLAS DEL SISTEMA</b></li>
+			  </p></ul>
+			  <p>Los campos Nacionalidad, C&eacute;dula de Identidad y Nombre y Apellidos se encuentran inhabilitados ya que estos no pueden ser modificados.</p>
+			  <p>Para modificar los datos, se debe seguir los siguientes pasos:</p>
+			  <p>1. Seleccionar de la lista de perfil el nuevo perfil si &eacute;ste ser&aacute; modificado.</p>			  
+			  <p>2. Para Activar/Desactivar las operaciones y las tablas mediante las casillas de verificaci&oacute;n existen dos maneras:</p> 
+			  <p>   2.1 Selecci&oacute;n Simple:</p>
+			  <p>       La Selecci&oacute;n simple, permite seleccionar de manera individual las operaciones de una tabla determinada haciendo click en la casilla de verificaci&oacute;n para que el usuario tenga la permisolog&iacute;a o no de ejecutar dicha actividad.</p>  
+	  		  <p>   2.1 Selecci&oacute;n M&uacute;ltiple: puede hacerse de dos maneras y las casillas de verificaci&oacute;n se encuentran adjuntas a los nombres de las operaciones y de las tablas</p>
+			  <p>       Operaci&oacute;n/Tabla: permite seleccionar de manera colectiva una operaci&oacute;n para todas las tablas presentes en el sistema, haciendo click en la respectiva casilla de verificaci&oacute;n de la operaci&oacute;n seleccionada</p>  
+			  <p>       Tabla/Operaci&oacute;n: permite seleccionar de manera colectiva una tabla para todas las operaciones presentes en el sistema, haciendo click en la respectiva casilla de verificaci&oacute;n de la tabla seleccionada</p>  
+			  <p>3. Por &uacute;ltimo se debe presionar el bot&oacute;n Aceptar para validar los cambios.</p>						 
+			  <p> El bot&oacute;n Cancelar permite regresar al Listado de Usuarios.</p>			  
+			</span></td>
+	  	  </tr>
+	    </table>
+	  </td>
+	</tr>
+  </table>";
+  return $this->resultado;
+  }
+//****************************************************************************
+  function menu_con_usu_eli(){
+  $this->resultado="
+  <table border=\"0\" align=\"center\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\"  height=\"100%\">
+	<tr>
+	  <td width=\"100%\"><div id=\"Listar\" style=\"position:absolute; width:100%; height:20px; z-index:auto; azimuth:center; top:35px; background-position:center; left: 0px;\">
+	    <table style=\"width: 100%; text-align: center; margin-left: auto; margin-right: auto;\" height=\"100%\" border=\"1\" align=\"left\" cellpadding=\"6\" cellspacing=\"2\" bordercolor=\"#777A4B\" bgcolor=\"#ffffff\">
+		  <tr><td colspan=\"10\" bgcolor=\"#777A4B\"><span class=\"Estilo16\">:: ELIMINAR USUARIO</span></td></tr>
+		  <tr>
+		    <td bgcolor=\"#FFF8E5\" width=\"100%\"><span class=\"Estilo17\">
+			  <p>En esta opci&oacute;n se elimina el usuario de manera l&oacute;gica en la base de datos quedando inhabilitado para cualquier operaci&oacute;n. Los datos que presenta la ventana son:</p>
+			  <p><ul>
+                <li><b>a.NACIONALIDAD Y CEDULA DE IDENTIDAD</b></li>               
+			    <li><b>b.APELLIDOS Y NOMBRES</b></li>               
+			  </p></ul>
+			  <p>Para modificar el status, se debe seguir los siguientes pasos:.</p>
+			  <p>1. Si se desea eliminar el usuario, se debe responder a la pregunta: Seguro que desea eliminar a este usuario???.</p>
+			  <p>2. Se presentan dos opciones Si y No, y solo se debe escoger solo una.</p>
+			  <p>3. Si la respuesta es afirmativa el ususario quedara eliminado en caso contrario, no ocurre ningun evento</p>
+			  <p>4. Por &uacute;ltimo se debe presionar el bot&oacute;n Aceptar para validar los cambios.</p>						 
+			  <p> El bot&oacute;n Cancelar permite regresar al Listado de Usuarios.</p>			  	
+			  <p>4. Si la respuesta es negativa podra regresar a Lisatdo de Usuarios mediante el </p>
+			  <p>  Si se quiere revertir la operacion anterior se debe comunicar con el Administrador del Sistema.</p>
+			</span></td>
+	  	  </tr>
+	    </table>
+	  </td>
+	</tr>
+  </table>";
+  return $this->resultado;
+  }
+//****************************************************************************
+  function menu_con_usu_imp(){
+  $this->resultado="
+  <table border=\"0\" align=\"center\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\"  height=\"100%\">
+	<tr>
+	  <td width=\"100%\"><div id=\"Listar\" style=\"position:absolute; width:100%; height:20px; z-index:auto; azimuth:center; top:35px; background-position:center; left: 0px;\">
+	    <table style=\"width: 100%; text-align: center; margin-left: auto; margin-right: auto;\" height=\"100%\" border=\"1\" align=\"left\" cellpadding=\"6\" cellspacing=\"2\" bordercolor=\"#777A4B\" bgcolor=\"#ffffff\">
+		  <tr><td colspan=\"10\" bgcolor=\"#777A4B\"><span class=\"Estilo16\">:: CONSULTAR USUARIO</span></td></tr>
+		  <tr>
+		    <td bgcolor=\"#FFF8E5\" width=\"100%\"><span class=\"Estilo17\">
+			  <p>Esta opci&oacute;n permite consultar los datos usuario, y si posee la permisolog&iacute;a adecuada  podr&aacute; Descargar excepto el identificador compuesto por la Nacionalidad y C&eacute;dula de Identidad.  Los datos que presenta la ventana son:</p>
+			  <p><ul>
+			    <li><b>a.NACIONALIDAD Y CEDULA DE IDENTIDAD</b></li>               
+			    <li><b>b.APELLIDOS Y NOMBRES</b></li>
+                <li><b>c.DIRECCION</b></li>
+                <li><b>d.PERFIL</b></li>
+                <li><b>e.LOGIN</b></li>
+                <li><b>f.LOGIN</b></li>
+                <li><b>g.ESTADO</b></li>
+			  </p></ul>
+			  <p>Los campos presentes estan inhabilitados ya que son solo para la consulta.</p>			  
+			  <p>Para imprimir la consulta se mostrar&aacute; la siguiente pregunta: Desea imprimir en pdf a este usuario???</p>
+ 			  <p>Si el usuario no posee la permisolog&iacute;a para Descargar la Consulta, no se mostrar&aacute; la pregunta anterior.</p>
+			  <p>Luego de la pregunta se presentan dos opciones Si y No, y solo se debe escoger una.</p>
+			  <p>Si la respuesta es afirmativa y se presiona el bot&oacute;n Aceptar se desplegar&aacute; un archivo en pdf para la respectiva impresion o para guardar el archivo en otra ubicaci&oacute;n del computador.</p>
+			  <p>Si la respuesta es negativa y presiona el bot&oacute;n Cancelar permite regresar al Listado de Usuarios.</p>	
+			</span></td>
+	  	  </tr>
+	    </table>
+	  </td>
+	</tr>
+  </table>";
+  return $this->resultado;
+  }
+//****************************************************************************
+  function menu_con_usu_agr(){
+  $this->resultado="
+  <table border=\"0\" align=\"center\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\"  height=\"100%\">
+	<tr>
+	  <td width=\"100%\"><div id=\"Listar\" style=\"position:absolute; width:100%; height:20px; z-index:auto; azimuth:center; top:35px; background-position:center; left: 0px;\">
+	    <table style=\"width: 100%; text-align: center; margin-left: auto; margin-right: auto;\" height=\"100%\" border=\"1\" align=\"left\" cellpadding=\"6\" cellspacing=\"2\" bordercolor=\"#777A4B\" bgcolor=\"#ffffff\">
+		  <tr><td colspan=\"10\" bgcolor=\"#777A4B\"><span class=\"Estilo16\">:: AGREGAR USUARIO</span></td></tr>
+		  <tr>
+		    <td bgcolor=\"#FFF8E5\" width=\"100%\"><span class=\"Estilo17\">
+			  <p>Esta opci&oacute;n permite agregar un usuario con sus correspondientes datos. Los datos que presenta la ventana son:</p>
+			  <p><ul>
+			    <li><b>a.NACIONALIDAD Y CEDULA DE IDENTIDAD</b></li>               
+			    <li><b>b.APELLIDOS Y NOMBRES</b></li>
+                <li><b>c.DIRECCION DE HABITACION</b></li>
+                <li><b>d.PERFIL</b></li>
+                <li><b>e.LOGIN</b></li>
+				<li><b>c.PREGUNTA SECRETA</b></li>
+				<li><b>d.RESPUESTA SECRETA</b></li>
+				<li><b>f.VERIFICAR RESPUESTA SECRETA</b></li>                
+				<li><b>c.PASSWORD</b></li>
+                <li><b>d.VERIFICAR PASSWORD</b></li>
+  				<li><b>d.ASOCIAR FINCA</b></li>
+			  </p></ul>
+			  <p>Los campos Nacionalidad, C&eacute;dula de Identidad ser&aacute;n el identificador del Uusario, por tanto tome la precauci&oacute;n de ingresar los datos correctamente.</p>
+			  <p>Para agregar los datos, se debe seguir los siguientes pasos:</p>
+			  <p>1. Debe seleccionar una opci&oacute;n ara la nacionalidad.</p>			  
+			  <p>2. Se debe ingresar el n&uacute;mero de la C&eacute;dula de Identidad en formato de NUMEROS y sin puntos u otro caracter alfanum&eacute;rico. </p> 
+			  <p>3. Se debe ingresar los apellidos y nombres del usuario. </p> 
+			  <p>4. Se debe ingresar la direcci&oacute;n del usuario. Tome en cuenta solo los caracteres especiales: # . - </p> 
+			  <p>5. El campo Perfil muestra una lista actualizada de los perfiles cargados en el sistema, en donde debe seleccionar uno.</p>
+			  <p>6. Se debe ingresar el login del usuario para su autenticaci&oacute;n al  momento de ingresar al sistema. Tome en cuenta solo los caracteres alfanum&eacute;ricos.</p> 
+			  <p>7. Se debe ingresar la pregunta secreta como opci&oacute;n para recuperar el password en alg&uacute;n momento dado. Tome en cuenta solo los caracteres alfanum&eacute;ricos.</p> 
+			  <p>8. Se debe ingresar la respuesta a la pregunta secreta descrita en el paso anterior. Tome en cuenta solo los caracteres alfanum&eacute;ricos.</p> 
+			  <p>9. Se debe ingresar la respuesta de la pregunta secreta nuevamente para su verificaci&oacute;n  Tome en cuenta solo los caracteres alfanum&eacute;ricos.</p> 
+			  <p>10. Se debe ingresar el password que acompa&ntilde;ar&aacute; al login del usuario para su respectiva autenticaci&oacute;n al  momento de ingresar al sistema.  Tome en cuenta solo los caracteres alfanum&eacute;ricos.</p> 
+			  <p>11. Se debe seleccionar al menos una finca de la lista desplegable de las Fincas.</p>
+			  <p>12. Por &uacute;ltimo se debe presionar el bot&oacute;n Aceptar para validar los cambios.</p>						 
+			  <p> El bot&oacute;n Cancelar permite regresar al Listado de Usuarios.</p>			  
+			  <p> Se debe tomar en cuenta la correcta escritura de los datos, ya que los campos estan validados.</p>
+			  <p> Aquellos campos que presentan la siguiente figura <img src="\".."/"Imagenes/Obligatorio.png width=\"9\" height="8"> son OBLIGATORIOS y no deben dejarse en blanco.</p>
+			</span></td>
+	  	  </tr>
+	    </table>
+	  </td>
+	</tr>
+  </table>";
+  return $this->resultado;
+  }
